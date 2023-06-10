@@ -1,0 +1,687 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:MobileOntology="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Ultrasonic">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Fingerprint_Sensor"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Android_OS">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#OperatingSystem"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Qualcomm_Snapdragon">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#CPU"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Adreno">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#GPU"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#USB_Type_A/B">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Charging_Connector"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Capacitive">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Fingerprint_Sensor"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Mali">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#GPU"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#RAM">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Component"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#USB_Type_C">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Charging_Connector"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#AMOLED">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Display"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Speaker">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Component"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Smartwatch">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onClass>
+          <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Camera"/>
+        </owl:onClass>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >0</owl:qualifiedCardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#hasCamera"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Mobile_Device"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Fingerprint_Sensor">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Component"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Exynos">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#CPU"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#LPDDR4X">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#RAM"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Watch_OS">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#OperatingSystem"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Smartphone">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onClass>
+          <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Camera"/>
+        </owl:onClass>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >3</owl:maxQualifiedCardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#hasCamera"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Mobile_Device"/>
+    </rdfs:subClassOf>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Mobile_Device"/>
+          <owl:Restriction>
+            <owl:onClass>
+              <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Camera"/>
+            </owl:onClass>
+            <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+            >2</owl:minQualifiedCardinality>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#hasCamera"/>
+            </owl:onProperty>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Camera">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Component"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#LPDDR4">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#RAM"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Macro">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Camera"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Tensor">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#CPU"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Battery">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Component"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Ultra_wide_angle">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Camera"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Iphone_OS">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#OperatingSystem"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Stereo">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Speaker"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Mobile_Device">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onClass rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Battery"/>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:qualifiedCardinality>
+        <owl:onProperty>
+          <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#hasBattery"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onClass>
+          <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Company"/>
+        </owl:onClass>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:qualifiedCardinality>
+        <owl:onProperty>
+          <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Brand"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#DDR4">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#RAM"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Display">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Component"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Charging_Connector">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Component"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Li_Po">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Battery"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#IPS_LSD">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Display"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Lightning">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Charging_Connector"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#LPDDR5">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#RAM"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Call">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Speaker"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Company">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Wear_OS">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#OperatingSystem"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#CPU">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Component"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Telephoto">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Camera"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Tegra">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#GPU"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Tablet">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onClass rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Camera"/>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:maxQualifiedCardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#hasCamera"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Mobile_Device"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Li_Lon">
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Li_Po"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Battery"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#LCD">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Display"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#GPU">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Component"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#MediaTek">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#CPU"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Optical">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Fingerprint_Sensor"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Mono">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Speaker"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#OLED">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Display"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Apple_Series">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#CPU"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Wide_angle">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Camera"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#hasOS">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#OperatingSystem"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Mobile_Device"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#hasCamera">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Camera"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Mobile_Device"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Components"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#SPEAKER">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#BATTERY">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#OS"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#device_memory">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Mobile_Device"/>
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#DEVICE"/>
+    </rdfs:subPropertyOf>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#CHARGING_CONNECTOR">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#DISPLAY">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#device_model">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Mobile_Device"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#DEVICE"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#diplay_smooth">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Display"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#DISPLAY"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#RAM_baud_rate">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#RAM"/>
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#RAM_PROP"/>
+    </rdfs:subPropertyOf>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#RAM_PROP">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#GPU_PROP">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#CPU_PROP">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#display_resolution_h">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Display"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#DISPLAY"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#device_pirice">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Mobile_Device"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#DEVICE"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#CAMERA">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Camera"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  </owl:DatatypeProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#hasBattery">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Battery"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Mobile_Device"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Components"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#camera_aperture">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Camera"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#CAMERA"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#CPU_cores">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#CPU"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#CPU_PROP"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#hasDisplay">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Display"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Mobile_Device"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Components"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#camera_angle">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Camera"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#CAMERA"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#display_density">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Display"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#DISPLAY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#os_version">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#OperatingSystem"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#OS"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#CPU_frequency">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#CPU"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#CPU_PROP"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#display_resolution_w">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Display"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#DISPLAY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#hasGPU">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#GPU"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Mobile_Device"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Components"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#hasCPU">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#CPU"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Mobile_Device"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Components"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#hasFingerpintSensor">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Fingerprint_Sensor"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Mobile_Device"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Components"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#RAM_capacity">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#RAM"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#RAM_PROP"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#hasChargingConnector">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Charging_Connector"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Mobile_Device"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Components"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#battery_capacity">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Battery"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#BATTERY"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Brand">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Company"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Mobile_Device"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#company_name">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Company"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Company"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#camera_MP">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Camera"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#CAMERA"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#hasSpeaker">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Speaker"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Mobile_Device"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Components"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#hasRAM">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#RAM"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Mobile_Device"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Components"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <MobileOntology:Adreno rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#adreno_630">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </MobileOntology:Adreno>
+  <owl:Restriction>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Mali"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#hasGPU"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:someValuesFrom>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Exynos"/>
+          <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#MediaTek"/>
+          <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Tensor"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:someValuesFrom>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#hasCPU"/>
+  </owl:Restriction>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#DDR4"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#LPDDR4"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#LPDDR4X"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#LPDDR5"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <MobileOntology:Stereo rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#speaker_stereo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </MobileOntology:Stereo>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Macro"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Telephoto"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Ultra_wide_angle"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Wide_angle"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Capacitive"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Optical"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Ultrasonic"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Adreno"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Mali"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Tegra"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Battery"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#CPU"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Camera"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Charging_Connector"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Display"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Fingerprint_Sensor"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#GPU"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#RAM"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Speaker"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#AMOLED"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#IPS_LSD"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#LCD"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#OLED"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <MobileOntology:Apple_Series rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#apple_a13_bionic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </MobileOntology:Apple_Series>
+  <MobileOntology:Qualcomm_Snapdragon rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#qualcomm_snapdragon_835">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </MobileOntology:Qualcomm_Snapdragon>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Lightning"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#USB_Type_C"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#USB_Type_A/B"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Call"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Mono"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Stereo"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Smartphone"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Smartwatch"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Tablet"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <owl:Restriction>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Adreno"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#hasGPU"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Qualcomm_Snapdragon"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#hasCPU"/>
+  </owl:Restriction>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Android_OS"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Iphone_OS"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Watch_OS"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Wear_OS"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Apple_Series"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Exynos"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#MediaTek"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Qualcomm_Snapdragon"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Tensor"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#google_pixel_6">
+    <MobileOntology:hasFingerpintSensor>
+      <MobileOntology:Fingerprint_Sensor rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#fingerprint_under_display_opt">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </MobileOntology:Fingerprint_Sensor>
+    </MobileOntology:hasFingerpintSensor>
+    <MobileOntology:device_pirice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >600</MobileOntology:device_pirice>
+    <MobileOntology:hasDisplay>
+      <MobileOntology:OLED rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#oled_display_1080x2400">
+        <MobileOntology:display_resolution_w rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >1080</MobileOntology:display_resolution_w>
+        <MobileOntology:display_resolution_h rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >2400</MobileOntology:display_resolution_h>
+        <MobileOntology:display_density rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >411</MobileOntology:display_density>
+        <MobileOntology:diplay_smooth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >90</MobileOntology:diplay_smooth>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </MobileOntology:OLED>
+    </MobileOntology:hasDisplay>
+    <MobileOntology:hasCamera>
+      <MobileOntology:Camera rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#ultrawide_114">
+        <MobileOntology:camera_aperture rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >2.2</MobileOntology:camera_aperture>
+        <MobileOntology:camera_angle rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >114</MobileOntology:camera_angle>
+        <MobileOntology:camera_MP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >12</MobileOntology:camera_MP>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </MobileOntology:Camera>
+    </MobileOntology:hasCamera>
+    <MobileOntology:hasCamera>
+      <MobileOntology:Camera rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#cmos">
+        <MobileOntology:camera_aperture rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >2.0</MobileOntology:camera_aperture>
+        <MobileOntology:camera_angle rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >82</MobileOntology:camera_angle>
+        <MobileOntology:camera_MP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >8</MobileOntology:camera_MP>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </MobileOntology:Camera>
+    </MobileOntology:hasCamera>
+    <MobileOntology:hasCamera>
+      <MobileOntology:Camera rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#samsung_gn1">
+        <MobileOntology:camera_aperture rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+        >1.9</MobileOntology:camera_aperture>
+        <MobileOntology:camera_angle rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >80</MobileOntology:camera_angle>
+        <MobileOntology:camera_MP rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >50</MobileOntology:camera_MP>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </MobileOntology:Camera>
+    </MobileOntology:hasCamera>
+    <MobileOntology:hasOS>
+      <MobileOntology:Android_OS rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#android_version_12">
+        <MobileOntology:os_version>android 12</MobileOntology:os_version>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </MobileOntology:Android_OS>
+    </MobileOntology:hasOS>
+    <MobileOntology:hasCPU>
+      <MobileOntology:Tensor rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#tensor_1">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </MobileOntology:Tensor>
+    </MobileOntology:hasCPU>
+    <rdf:type rdf:resource="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#Mobile_Device"/>
+    <MobileOntology:device_model>Pixel 6</MobileOntology:device_model>
+    <MobileOntology:Brand>
+      <MobileOntology:Company rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#google_company">
+        <MobileOntology:company_name>Google</MobileOntology:company_name>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </MobileOntology:Company>
+    </MobileOntology:Brand>
+    <MobileOntology:hasRAM>
+      <MobileOntology:RAM rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#lpddr5_8gb">
+        <MobileOntology:RAM_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >8</MobileOntology:RAM_capacity>
+        <MobileOntology:RAM_baud_rate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >5500</MobileOntology:RAM_baud_rate>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </MobileOntology:RAM>
+    </MobileOntology:hasRAM>
+    <MobileOntology:hasGPU>
+      <MobileOntology:Mali rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#mali_g78">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </MobileOntology:Mali>
+    </MobileOntology:hasGPU>
+    <MobileOntology:hasBattery>
+      <MobileOntology:Battery rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#li_lon_4600">
+        <MobileOntology:battery_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >4600</MobileOntology:battery_capacity>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </MobileOntology:Battery>
+    </MobileOntology:hasBattery>
+  </owl:NamedIndividual>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#DDR4"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#LPDDR4"/>
+      <owl:Class rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#LPDDR4X"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <MobileOntology:Company rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#apply_company">
+    <MobileOntology:company_name>Apple</MobileOntology:company_name>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </MobileOntology:Company>
+  <MobileOntology:Charging_Connector rdf:about="http://www.semanticweb.org/hv200/ontologies/2023/4/MobileOntology#usb_type_c_3gen1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </MobileOntology:Charging_Connector>
+</rdf:RDF>

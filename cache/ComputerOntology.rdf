@@ -1,0 +1,531 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ComputerOntology="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#"
+    xmlns="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#SocketLGA">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Processor_Cooling"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Mother_Board"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Intel"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Videocards">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Computer_components"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Computer_Case">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Computer_components"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Case_Cooling">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Cooling_System"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Intel">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Processors"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Cooling_System">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Computer_components"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Series_i">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Intel"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Series_Ryzen">
+    <rdfs:subClassOf>
+      <ComputerOntology:Components_Manufacturer rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#AMD">
+        <ComputerOntology:hasCompanyName>AMD</ComputerOntology:hasCompanyName>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:subClassOf>
+          <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Processors"/>
+        </rdfs:subClassOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+      </ComputerOntology:Components_Manufacturer>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Intel_Chipset">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Chipset"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Drive">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Computer_components"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Mother_Board">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Computer_components"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Complited_PC"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#RAM">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Computer_components"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#SocketAM">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Processor_Cooling"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Mother_Board"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#AMD"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#AMD_Chipset">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Chipset"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Power_Supply">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Computer_components"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#SSD">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Drive"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Processors">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Computer_components"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Chipset">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Mother_Board"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Graphic_Processor">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Videocards"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Processor_Cooling">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Cooling_System"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Components_Manufacturer"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#HDD">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Drive"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasDrive_Type">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#SSD"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#HDD"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Drive"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Components"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasCase_Cooling">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Case_Cooling"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Cooling_System"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Components"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasDrive_interfaces">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Mother_Board"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasChipset">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Chipset"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Mother_Board"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Intel_Chipset"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#AMD_Chipset"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Components"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasSeries">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Series_Ryzen"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Components"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Series_i"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Series_i"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Processors"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Series_Ryzen"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasCoolerMaterial">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Processor_Cooling"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Case_Cooling"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasInterface">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#SSD"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasCase_Type">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Computer_Case"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Components"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:DatatypeProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasForm_factor">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Mother_Board"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Computer_Case"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasCompanyName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Components_Manufacturer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasPower_Volume">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Power_Supply"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasVidocard_Size">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Videocards"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasCount_of_PCI-E_slots">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Mother_Board"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasComputer_Case">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Computer_Case"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Complited_PC"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Components"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasDrive_volume">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#SSD"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#HDD"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasSocket">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Processor_Cooling"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#AMD"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#SocketAM"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Intel"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Mother_Board"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#SocketAM"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#SocketLGA"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Components"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#SocketLGA"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasSizeForTheVideocard">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasProcessor_Cooling">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Processor_Cooling"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Cooling_System"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Components"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasMotherboard">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Mother_Board"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Complited_PC"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Components"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasRotation_SPeed">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#HDD"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasGrpaphicProcessor">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasRAM_Type">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#RAM"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Mother_Board"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasVideocard">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Videocards"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Complited_PC"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Components"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasRAM">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#RAM"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Complited_PC"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Components"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasDrive">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Drive"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Complited_PC"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Components"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasCPU_Frequency">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Processors"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasCore">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Processors"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasChipset_Type">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Intel_Chipset"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#AMD_Chipset"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Chipset"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Components"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasRAM_Frequency">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#RAM"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasCount_of_RAM_slots">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Mother_Board"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasGraphic_Processor">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Graphic_Processor"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Videocards"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Components"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasCores">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Processors"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasProcessor">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Processors"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Complited_PC"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Components"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasCooler_Size">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Processor_Cooling"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Case_Cooling"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasMemory_Volume">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Videocards"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasRAM_Volume">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#RAM"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasPower_Supply">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Power_Supply"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Complited_PC"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Components"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasCooler_Type">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Processor_Cooling"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Case_Cooling"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Brand">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Components_Manufacturer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Mother_Board"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#RAM"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Processors"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Cooling_System"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Power_Supply"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Computer_Case"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Videocards"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Drive"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasMemory_Type">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Videocards"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#hasCount_of_M.2_slots">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Mother_Board"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Super_Computer">
+    <ComputerOntology:hasProcessor>
+      <ComputerOntology:Processors rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Процессор_AMD_Ryzen_9_3950X,_BOX">
+        <ComputerOntology:hasCores rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >16</ComputerOntology:hasCores>
+        <ComputerOntology:hasCore>Matisse</ComputerOntology:hasCore>
+        <ComputerOntology:hasCPU_Frequency rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+        >3.5</ComputerOntology:hasCPU_Frequency>
+        <ComputerOntology:hasSocket>
+          <ComputerOntology:SocketAM rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Socket_AM4">
+            <ComputerOntology:hasSocket>Socket_AM4</ComputerOntology:hasSocket>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </ComputerOntology:SocketAM>
+        </ComputerOntology:hasSocket>
+        <ComputerOntology:hasSeries>
+          <ComputerOntology:Series_Ryzen rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#AMD_Ryzen_9">
+            <ComputerOntology:hasSeries>AMD Ryzen 9</ComputerOntology:hasSeries>
+            <ComputerOntology:Brand rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#AMD"/>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </ComputerOntology:Series_Ryzen>
+        </ComputerOntology:hasSeries>
+        <ComputerOntology:Brand rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#AMD"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </ComputerOntology:Processors>
+    </ComputerOntology:hasProcessor>
+    <ComputerOntology:hasRAM>
+      <ComputerOntology:RAM rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Оперативная_память_Kingston_Fury_Beast_RGB_KF436C18BBA/32_DDR4_-_32ГБ">
+        <ComputerOntology:hasRAM_Volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >32</ComputerOntology:hasRAM_Volume>
+        <ComputerOntology:hasRAM_Type>DDR4</ComputerOntology:hasRAM_Type>
+        <ComputerOntology:hasRAM_Frequency rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >3600</ComputerOntology:hasRAM_Frequency>
+        <ComputerOntology:Brand>
+          <ComputerOntology:Components_Manufacturer rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#KIngston">
+            <ComputerOntology:hasCompanyName>Kingston</ComputerOntology:hasCompanyName>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </ComputerOntology:Components_Manufacturer>
+        </ComputerOntology:Brand>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </ComputerOntology:RAM>
+    </ComputerOntology:hasRAM>
+    <ComputerOntology:hasDrive>
+      <ComputerOntology:SSD rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#SSD_накопитель_Samsung_870_EVO_MZ-77E1T0BW_1ТБ">
+        <ComputerOntology:hasDrive_volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >1000</ComputerOntology:hasDrive_volume>
+        <ComputerOntology:hasDrive_interfaces>SATA III</ComputerOntology:hasDrive_interfaces>
+        <ComputerOntology:Brand>
+          <ComputerOntology:Components_Manufacturer rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#SAMSUNG">
+            <ComputerOntology:hasCompanyName>SAMSUNG</ComputerOntology:hasCompanyName>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </ComputerOntology:Components_Manufacturer>
+        </ComputerOntology:Brand>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </ComputerOntology:SSD>
+    </ComputerOntology:hasDrive>
+    <ComputerOntology:hasVideocard>
+      <ComputerOntology:Videocards rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Видеокарта_MSI_NVIDIA_GeForce_RTX_4090_RTX_4090_SUPRIM_24G">
+        <ComputerOntology:hasVidocard_Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >336</ComputerOntology:hasVidocard_Size>
+        <ComputerOntology:hasMemory_Volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >24</ComputerOntology:hasMemory_Volume>
+        <ComputerOntology:hasMemory_Type>GDDR6X</ComputerOntology:hasMemory_Type>
+        <ComputerOntology:hasGraphic_Processor>
+          <ComputerOntology:Graphic_Processor rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#NVIDIA_RTX_4090">
+            <ComputerOntology:hasGrpaphicProcessor>NVIDIA RTX 4090</ComputerOntology:hasGrpaphicProcessor>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </ComputerOntology:Graphic_Processor>
+        </ComputerOntology:hasGraphic_Processor>
+        <ComputerOntology:Brand>
+          <ComputerOntology:Components_Manufacturer rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#MSI">
+            <ComputerOntology:hasCompanyName>MSI</ComputerOntology:hasCompanyName>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </ComputerOntology:Components_Manufacturer>
+        </ComputerOntology:Brand>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </ComputerOntology:Videocards>
+    </ComputerOntology:hasVideocard>
+    <ComputerOntology:hasPower_Supply>
+      <ComputerOntology:Power_Supply rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Блок_питания_Cooler_Master_M2000,_2000Вт,_черный">
+        <ComputerOntology:hasPower_Volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >2000</ComputerOntology:hasPower_Volume>
+        <ComputerOntology:Brand>
+          <ComputerOntology:Components_Manufacturer rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Cooler_Master">
+            <ComputerOntology:hasCompanyName>Cooler_Master</ComputerOntology:hasCompanyName>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </ComputerOntology:Components_Manufacturer>
+        </ComputerOntology:Brand>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </ComputerOntology:Power_Supply>
+    </ComputerOntology:hasPower_Supply>
+    <ComputerOntology:hasMotherboard>
+      <ComputerOntology:Mother_Board rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Материнская_плата_MSI_MAG_X570S_TORPEDO_MAX">
+        <ComputerOntology:hasCount_of_PCI-E_slots rdf:datatype=
+        "http://www.w3.org/2001/XMLSchema#decimal">1</ComputerOntology:hasCount_of_PCI-E_slots>
+        <ComputerOntology:hasRAM_Type>DDR4</ComputerOntology:hasRAM_Type>
+        <ComputerOntology:hasForm_factor>ATX</ComputerOntology:hasForm_factor>
+        <ComputerOntology:hasCount_of_M.2_slots rdf:datatype=
+        "http://www.w3.org/2001/XMLSchema#decimal">2</ComputerOntology:hasCount_of_M.2_slots>
+        <ComputerOntology:hasChipset>
+          <ComputerOntology:AMD_Chipset rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#AMD_X570">
+            <ComputerOntology:hasChipset>AMD_X570</ComputerOntology:hasChipset>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </ComputerOntology:AMD_Chipset>
+        </ComputerOntology:hasChipset>
+        <ComputerOntology:hasCount_of_RAM_slots rdf:datatype=
+        "http://www.w3.org/2001/XMLSchema#decimal">4</ComputerOntology:hasCount_of_RAM_slots>
+        <ComputerOntology:hasSocket rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Socket_AM4"/>
+        <ComputerOntology:Brand rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#MSI"/>
+        <ComputerOntology:hasDrive_interfaces>SATA III x 6</ComputerOntology:hasDrive_interfaces>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </ComputerOntology:Mother_Board>
+    </ComputerOntology:hasMotherboard>
+    <ComputerOntology:hasCase_Cooling>
+      <ComputerOntology:Case_Cooling rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Вентилятор_Cooler_Master_SickleFlow_120_Blue,_120мм,_Ret">
+        <ComputerOntology:hasCooler_Type>Air</ComputerOntology:hasCooler_Type>
+        <ComputerOntology:hasCooler_Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >120</ComputerOntology:hasCooler_Size>
+        <ComputerOntology:Brand rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Cooler_Master"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </ComputerOntology:Case_Cooling>
+    </ComputerOntology:hasCase_Cooling>
+    <rdf:type rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Complited_PC"/>
+    <ComputerOntology:hasCase_Cooling>
+      <ComputerOntology:Case_Cooling rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Вентилятор_Cooler_Master_SickleFlow_120_Red,_120мм,_Ret">
+        <ComputerOntology:hasCooler_Type>Air</ComputerOntology:hasCooler_Type>
+        <ComputerOntology:hasCooler_Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >120</ComputerOntology:hasCooler_Size>
+        <ComputerOntology:Brand rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Cooler_Master"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </ComputerOntology:Case_Cooling>
+    </ComputerOntology:hasCase_Cooling>
+    <ComputerOntology:hasProcessor_Cooling>
+      <ComputerOntology:Processor_Cooling rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Устройство_охлаждения(кулер)_Cooler_Master_MA410M_ARGB">
+        <ComputerOntology:hasCooler_Type>Air</ComputerOntology:hasCooler_Type>
+        <ComputerOntology:hasCooler_Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >120</ComputerOntology:hasCooler_Size>
+        <ComputerOntology:hasCoolerMaterial>Aluminium + Copper</ComputerOntology:hasCoolerMaterial>
+        <ComputerOntology:hasSocket rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Socket_AM4"/>
+        <ComputerOntology:Brand rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Cooler_Master"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </ComputerOntology:Processor_Cooling>
+    </ComputerOntology:hasProcessor_Cooling>
+    <ComputerOntology:hasComputer_Case>
+      <ComputerOntology:Computer_Case rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Корпус_ATX_Formula_V-LINE_6000-RGB,_черный">
+        <ComputerOntology:hasSizeForTheVideocard rdf:datatype=
+        "http://www.w3.org/2001/XMLSchema#decimal">420</ComputerOntology:hasSizeForTheVideocard>
+        <ComputerOntology:hasForm_factor>ATX</ComputerOntology:hasForm_factor>
+        <ComputerOntology:hasCase_Type>Full_Tower</ComputerOntology:hasCase_Type>
+        <ComputerOntology:Brand>
+          <ComputerOntology:Components_Manufacturer rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Formula">
+            <ComputerOntology:hasCompanyName>Formula</ComputerOntology:hasCompanyName>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </ComputerOntology:Components_Manufacturer>
+        </ComputerOntology:Brand>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </ComputerOntology:Computer_Case>
+    </ComputerOntology:hasComputer_Case>
+    <ComputerOntology:hasDrive>
+      <ComputerOntology:SSD rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#SSD_накопитель_Samsung_980_PRO_MZ-V8P1T0BW_1ТБ">
+        <ComputerOntology:hasDrive_volume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >1000</ComputerOntology:hasDrive_volume>
+        <ComputerOntology:hasDrive_interfaces>M.2</ComputerOntology:hasDrive_interfaces>
+        <ComputerOntology:Brand rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#SAMSUNG"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </ComputerOntology:SSD>
+    </ComputerOntology:hasDrive>
+    <ComputerOntology:hasCase_Cooling>
+      <ComputerOntology:Case_Cooling rdf:about="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Вентилятор_Cooler_Master_SickleFlow_120_ARGB,_120мм,_Ret">
+        <ComputerOntology:hasCooler_Type>Air</ComputerOntology:hasCooler_Type>
+        <ComputerOntology:hasCooler_Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >120</ComputerOntology:hasCooler_Size>
+        <ComputerOntology:Brand rdf:resource="http://www.semanticweb.org/chchcropp/ontologies/2023/4/ComputerOntology#Cooler_Master"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </ComputerOntology:Case_Cooling>
+    </ComputerOntology:hasCase_Cooling>
+  </owl:NamedIndividual>
+</rdf:RDF>
